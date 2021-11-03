@@ -461,12 +461,10 @@ footer .social-links {
     max-width: 1440px;
     width: 100%;
     margin: auto;
-    /* justify-items: center;
-    justify-items: center; */
-
   }
 
   .headline-left {
+    justify-content: center;
     background: url("../assets/images/image_dots.svg");
     background-position: right bottom;
     background-repeat: no-repeat, repeat;
@@ -476,8 +474,24 @@ footer .social-links {
   }
 
   .headline-left .name {
-    font-size: 9rem;
+    font-size: 7rem;    
+    width: 484px;
+    height: 220px;
+    color: #1A2236;
   }
+
+  .headline-left .intro {
+    width: 484px;
+    color: #1a2236;
+    font-size: 1rem;
+    margin: 2rem 0;
+  }
+
+  .headline-left .start-collaboration {
+    width: 254px;
+    font-size: 1rem;
+  }
+
 
   .headline-right {
     display: block;
