@@ -6,24 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Document</title>
+  <title>Mihndim Full-Stack Web-Developer</title>
 </head>
 <body>
   <header>
     <nav>
-      <img src="assets/images/ic_menu.png" alt="hamburger button">
+      <div class="mobile-nav">
+        <img src="assets/images/ic_menu.png" alt="hamburger button">
+      </div>
+      <ul class="desktop-nav">
+        <li><a href="#">Hello</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
   <section class="headline">
-    <h1 class="name">
-      Mihndim Julius
-    </h1>
-    <p class="intro">
-      Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works. If you like what you see and have a project you need coded, don’t hesitate and contact me.
-    </p>
-    <button class="btn start-collaboration" type="button">
-      Start collaboration
-    </button>
+    <div class="headline-left">
+      <h1 class="name">
+        Mihndim Julius
+      </h1>
+      <p class="intro">
+        Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works. If you like what you see and have a project you need coded, don’t hesitate and contact me.
+      </p>
+      <button class="btn start-collaboration" type="button">
+        Start collaboration
+      </button>
+    </div>
+    <div class="headline-right">
+    </div>
     <!-- *** This is an alternative to inserting a background *** -->
     <!-- <div class="deco-image">
       <img class="deco" src="assets/images/image_geometry_2.svg" alt="Deco">
@@ -138,7 +150,7 @@
           <input type="email" id="email" name="email" placeholder="Your email" required><span>Your email</span>
         </label><br>
         <label for="message">
-          <input class="textarea" id="message" name="message" placeholder="Please leave a message" maxlength="500" required><span>Leave a message</span>
+          <input class="textarea" id="message" name="message" placeholder="Please leave a message" rows="8" cols="50" maxlength="500" required><span>Leave a message</span>
         </label><br>
         <button class="btn start-collaboration" type="submit">
           Start collaboration
