@@ -130,15 +130,15 @@
     <div class="form-section">
       <h2 class="get-started">Get started</h2>
       <p class="call-to-action">The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961</p>
-      <form action="/action_page.php">
+      <form action="https://formspree.io/f/xknklbky" method="POST">
         <label for="name">
-          <input type="text" id="name" name="name" placeholder="Your name"> <span>Your name</span>
+          <input type="text" id="name" name="name" placeholder="Your name" maxlength="30" required> <span>Your name</span>
         </label><br>
         <label for="email">
-          <input type="email" id="email" name="email" placeholder="Your email"><span>Your email</span>
+          <input type="email" id="email" name="email" placeholder="Your email" required><span>Your email</span>
         </label><br>
         <label for="message">
-          <input class="textarea" type="text" id="message" name="message" placeholder="Leave a message"><span>Leave a message</span>
+          <input class="textarea" id="message" name="message" placeholder="Please leave a message" maxlength="500" required><span>Leave a message</span>
         </label><br>
         <button class="btn start-collaboration" type="submit">
           Start collaboration
