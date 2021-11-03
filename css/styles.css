@@ -46,7 +46,7 @@ nav .desktop-nav {
   max-width: 1440px;
   width: 100%;
   background: #fff;
-  box-shadow: 0px 0.5px 0px #dddfe6;
+  box-shadow: 0 0.5px 0 #dddfe6;
 }
 
 nav ul li {
@@ -474,10 +474,10 @@ footer .social-links {
   }
 
   .headline-left .name {
-    font-size: 7rem;    
+    font-size: 7rem;
     width: 484px;
     height: 220px;
-    color: #1A2236;
+    color: #1a2236;
   }
 
   .headline-left .intro {
@@ -491,7 +491,6 @@ footer .social-links {
     width: 254px;
     font-size: 1rem;
   }
-
 
   .headline-right {
     display: block;
