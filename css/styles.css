@@ -257,19 +257,25 @@ form .start-collaboration {
 }
 
 .about-myself .languages {
+  background: url('../assets/images/ic_languages_mob.svg'), url('../assets/images/languages-bg.svg');
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
   margin-top: 25px;
   padding: 20px;
-  background: #1c528a;
 }
 
 .about-myself .frameworks {
-  background: #e2505c;
+  background: url('../assets/images/frameworks.svg'), url('../assets/images/frameworks-bg.svg');
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
   margin-top: 25px;
   padding: 20px;
 }
 
 .about-myself .skills {
-  background: #febf52;
+  background: url('../assets/images/ic_skills.svg'), url('../assets/images/skills-bg.svg');
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
   margin-top: 25px;
   padding: 20px;
 }
