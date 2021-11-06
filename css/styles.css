@@ -34,7 +34,7 @@ header {
 .headline-left .message {
   position: fixed;
   margin-top: -40rem;
-  font-size: 5rem;
+  font-size: 4rem;
   color: yellow;
   background: darkblue;
   animation: blinker 2s linear infinite;
