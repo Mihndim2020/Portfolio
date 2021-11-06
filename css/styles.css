@@ -31,6 +31,21 @@ header {
   background-color: #fff;
 }
 
+.message {
+  position: fixed;
+  margin-top: -40rem;
+  font-size: 5rem;
+  color: yellow;
+  background: darkblue;
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 nav .mobile-nav {
   display: flex;
   flex-direction: row;
