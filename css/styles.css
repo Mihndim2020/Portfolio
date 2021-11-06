@@ -140,7 +140,8 @@ form .start-collaboration {
 
 /* **** This is the works section **** */
 
-.works h2 {
+.works h2,
+.desktop-works h2 {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
@@ -150,17 +151,20 @@ form .start-collaboration {
   color: #1a2236;
 }
 
-.works .project {
+.works .project,
+.desktop-works .project {
   display: flex;
   flex-direction: column;
 }
 
-.works .project-img {
+.works .project-img,
+.desktop-works .project-img {
   width: 100%;
   height: auto;
 }
 
-.works .project-info {
+.works .project-info,
+.desktop-works .project-info {
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -176,7 +180,8 @@ form .start-collaboration {
   color: #fff;
 }
 
-.works .project-name {
+.works .project-name,
+.desktop-works .project-name {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -186,7 +191,8 @@ form .start-collaboration {
   margin: 0;
 }
 
-.works ul {
+.works ul,
+.desktop-works ul {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -194,7 +200,8 @@ form .start-collaboration {
   margin-left: -2px;
 }
 
-.works ul li {
+.works ul li,
+.desktop-works ul li {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -207,7 +214,8 @@ form .start-collaboration {
   margin: 3px;
 }
 
-.works .see-project {
+.works .see-project,
+.desktop-works .see-project {
   display: flex;
   align-items: center;
   background: #1a2236;
@@ -223,9 +231,77 @@ form .start-collaboration {
   color: #fff;
 }
 
-.works .button-arrow {
+.works .button-arrow,
+.desktop-works .button-arrow {
   height: 12px;
   padding-left: 8px;
+}
+
+/****    Desktop works section    ****/
+
+.desktop-works {
+  display: none;
+  /* display: grid; */
+  max-width: 1440px;
+  width: 100%;
+  margin: 4rem auto;
+}
+
+.desktop-works .first {
+  display: flex;
+  justify-content: space-between;  
+  height: 40rem;
+}
+
+.desktop-works h2 {
+  transform: rotate(-90deg);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7rem;
+  margin: 20px 0;
+  line-height: 100%;
+  color: #1a2236;
+  
+}
+
+.first-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44%;
+  height: 100%;
+  background: url("../assets/images/projects-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-top: 0.3rem;
+}
+
+.first-right {
+  max-width: 800px;
+  width: 67%;
+  height: 100%;
+}
+
+.desktop-works .second {
+  display: flex;  
+  justify-content: space-between;
+  height: 20rem;
+}
+
+.second .project-img1,
+.second .project-img2 {
+  width: 30rem;
+  height: auto;
+}
+
+.second .second-middle {
+  width: 25rem;
+  min-width: 25rem;
+  height: auto;
+  margin-right: -2rem;
+  background: url("../assets/images/image-geometry_2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .about-myself {
@@ -498,4 +574,16 @@ footer .social-links {
     width: 50vw;
     height: 877px;
   }
+
+  .works {
+    display: none;
+  }
+
+  .desktop-works {
+    display: block;
+  }
+
+  /* .desktop-works .second {
+    display: grid;
+  } */
 }
