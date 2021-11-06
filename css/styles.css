@@ -241,6 +241,7 @@ form .start-collaboration {
 
 .desktop-works {
   display: none;
+
   /* display: grid; */
   max-width: 1440px;
   width: 100%;
@@ -249,7 +250,7 @@ form .start-collaboration {
 
 .desktop-works .first {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   height: 40rem;
 }
 
@@ -261,7 +262,6 @@ form .start-collaboration {
   margin: 20px 0;
   line-height: 100%;
   color: #1a2236;
-  
 }
 
 .first-left {
@@ -283,7 +283,7 @@ form .start-collaboration {
 }
 
 .desktop-works .second {
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   height: 20rem;
 }
