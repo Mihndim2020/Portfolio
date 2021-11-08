@@ -297,10 +297,15 @@ form .start-collaboration {
   height: 100%;
 }
 
-.desktop-works .second {
+.desktop-works .second,
+.desktop-works .third {
   display: flex;
   justify-content: space-between;
   height: 20rem;
+}
+
+.desktop-works .third {
+  height: 11.5rem;  
 }
 
 .second .project-img1,
@@ -601,4 +606,43 @@ footer .social-links {
   /* .desktop-works .second {
     display: grid;
   } */
+
+  .about-myself {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .about-myself .desktop-deco,
+  .about-myself .skills {
+    margin-top: 0;
+  }
+
+  .right-side {
+    width: 50%;
+    padding: 0 4rem;
+  }
+
+  .right-side .about-text {
+    width: 30rem;
+  }
+
+  .right-side .get-my-cv {
+    width: 15rem;
+  }
+
+  .left-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 50%;
+    padding-right: 2rem;
+  }
+
+  .desktop-deco {
+    background: url("../assets/images/image_dots_with_teal.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
 }
