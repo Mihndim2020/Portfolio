@@ -603,10 +603,6 @@ footer .social-links {
     display: block;
   }
 
-  /* .desktop-works .second {
-    display: grid;
-  } */
-
   .about-myself {
     display: flex;
     flex-direction: row-reverse;
@@ -644,5 +640,24 @@ footer .social-links {
     background: url("../assets/images/image_dots_with_teal.png");
     background-repeat: no-repeat;
     background-position: bottom right;
+  }
+
+  footer .form-section {
+    background: url('../assets/images/image-geometry_6.png'), url('../assets/images/image-geometry_7-1.png');
+    background-color:#f9f9fa;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 12rem 15rem;
+    margin-top: 6rem;
+  }
+
+  footer .start-collaboration {
+    width: 15rem;
+    margin: 0 auto;
+  }
+
+  footer .call-to-action { 
+    width: 40vw;
+    margin: 0 auto;
   }
 }
