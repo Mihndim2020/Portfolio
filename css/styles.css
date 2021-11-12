@@ -112,7 +112,7 @@ nav ul li {
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
-  height: calc(40vw + 400px);
+  height: calc(40vw + 415px);
   padding: 16px;
   margin: auto;
   background: url("../assets/images/image_geometry_2.svg");
