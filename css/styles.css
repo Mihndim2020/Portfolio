@@ -80,7 +80,6 @@ nav .mobile-container {
   float: right;
   width: 1.5rem;
   height: 1.5rem;
-
 }
 
 .mobile-nav .mobile-nav-items {
@@ -333,7 +332,7 @@ form .start-collaboration {
 }
 
 .desktop-works .third {
-  height: 11.5rem;  
+  height: 11.5rem;
 }
 
 .second .project-img1,
@@ -615,6 +614,11 @@ footer .social-links {
     margin: 2rem 0;
   }
 
+  footer .start-collaboration {
+    width: 15rem;
+    margin: 0 auto;
+  }
+
   .headline-left .start-collaboration {
     width: 254px;
     font-size: 1rem;
@@ -640,6 +644,12 @@ footer .social-links {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 0;
+  }
+
+  .desktop-deco {
+    background: url("../assets/images/image_dots_with_teal.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
   }
 
   .about-myself .desktop-deco,
@@ -668,27 +678,16 @@ footer .social-links {
     padding-right: 2rem;
   }
 
-  .desktop-deco {
-    background: url("../assets/images/image_dots_with_teal.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-  }
-
   footer .form-section {
     background: url('../assets/images/image-geometry_6.png'), url('../assets/images/image-geometry_7-1.png');
-    background-color:#f9f9fa;
+    background-color: #f9f9fa;
     background-position: top left, bottom right;
     background-repeat: no-repeat;
     background-size: 12rem 12rem;
     margin-top: 6rem;
   }
 
-  footer .start-collaboration {
-    width: 15rem;
-    margin: 0 auto;
-  }
-
-  footer .call-to-action { 
+  footer .call-to-action {
     width: 40vw;
     margin: 0 auto;
   }
