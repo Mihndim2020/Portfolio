@@ -10,9 +10,18 @@
 </head>
 <body>
   <header>
+    <img class="toggle-button" id="toggle-button" src="assets/images/ic_menu.png" alt="hamburger button">
     <nav>
       <div class="mobile-nav">
-        <img src="assets/images/ic_menu.png" alt="hamburger button">
+        <div class="mobile-container" id="mobile-menu">
+          <img class="close_btn" id="close-button" src="assets/images/Union2.svg" alt="close button">
+          <ul class="mobile-nav-items">
+            <li><a href="#">Hello</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
       <ul class="desktop-nav">
         <li><a href="#">Hello</a></li>
@@ -37,11 +46,8 @@
     </div>
     <div class="headline-right">
     </div>
-    <!-- *** This is an alternative to inserting a background *** -->
-    <!-- <div class="deco-image">
-      <img class="deco" src="assets/images/image_geometry_2.svg" alt="Deco">
-        </div> -->
   </section>
+  
   <section class="works">
     <h2 class="projects-heading">Projects</h2>
     <div class="project">      
@@ -116,9 +122,9 @@
         <div class="project-info">
           <h3 class="project-name">Project name goes here</h3>
           <ul class="technologies">
-            <li class="lang-frameworks">HTML/CSS</li>
-            <li class="lang-frameworks">Ruby on Rails</li>
-            <li class="lang-frameworks">JavaScript</li>
+            <li class="la-frameworks">Ruby on Rails</li>
+            <li class="lang-ng-frameworks">HTML/CSS</li>
+            <li class="langframeworks">JavaScript</li>
           </ul>
           <button class="see-project btn" type="button">See this project <span><img class="button-arrow" src="assets/images/Union.png" alt="arrow"></span></button>
         </div>      
@@ -130,13 +136,18 @@
       </div>
       <div class="second-middle"></div>
       <div class="second-third">
-        <img class="project-img2" src="assets/images/Rectangle_21_5.svg" alt="first-project"> 
+        <img class="project-img2" src="assets/images/Rectangle_21_5.svg" alt="second-project"> 
       </div>
     </div>
     <div class="third">
-      <div class="third-first">  
+      <div class="third-first">
+        <img class="project-img3" src="assets/images/Rectangle_21_4.svg" alt="third-project">   
       </div>
-      <div class="third-last">        
+      <div class="third-first">
+        <img class="project-img3" src="assets/images/Rectangle_21.svg" alt="third-project">   
+      </div>
+      <div class="third-last">
+        <img class="project-img4" src="assets/images/Rectangle_21_2.svg" alt="fourth-project">         
       </div>
     </div>
     <div class="fourth">
@@ -148,57 +159,65 @@
   </section>
 
   <section class="about-myself">
-    <h2 class="about">About</h2>
-    <p class="about-text">I am a full-stack software developer and love to work with HTML5, CSS3, Bootstrap, JavaScript, React and Redux, Ruby and Ruby on Rails. Available for hire.</p>
-    <button class="get-my-cv" type="button">Get my cv <span><img class="cv-image" src="assets/images/ic_download.svg" alt=""></span></button>
-    <div class="languages">
-      <h3>Languages</h3>
-      <ul>
-        <li>JavaScript(ES5/ES6)</li>
-        <li>Ruby</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
+    <div class="right-side">
+      <h2 class="about">About</h2>
+      <p class="about-text">I am a full-stack software developer and love to work with HTML5, CSS3, Bootstrap, JavaScript, React and Redux, Ruby and Ruby on Rails. Available for hire.</p>
+      <button class="get-my-cv" type="button">Get my cv <span><img class="cv-image" src="assets/images/ic_download.svg" alt=""></span></button>
     </div>
-    <div class="frameworks">
-      <h3>Frameworks</h3>
-      <ul>
-        <li>Bootstrap</li>
-        <li>Ruby on rails</li>
-        <li>RSpec</li>
-        <li>Capibara</li>
-        <li>Selenium</li>
-      </ul>
-    </div>
-    <div class="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>Codekit</li>
-        <li>Codepen</li>
-        <li>GitHub</li>
-        <li>GitLab</li>
-        <li>Terminal</li>
-      </ul>
+    <div class="left-side">
+      <div class="languages">
+        <h3>Languages</h3>
+        <ul>
+          <li>JavaScript(ES5/ES6)</li>
+          <li>Ruby</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div class="frameworks">
+        <h3>Frameworks</h3>
+        <ul>
+          <li>Bootstrap</li>
+          <li>Ruby on rails</li>
+          <li>RSpec</li>
+          <li>Capibara</li>
+          <li>Selenium</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>Codekit</li>
+          <li>Codepen</li>
+          <li>GitHub</li>
+          <li>GitLab</li>
+          <li>Terminal</li>
+        </ul>
+      </div>
+      <div class="desktop-deco">
+      </div>
     </div>
   </section>
   <footer>
     <div class="form-section">
-      <h2 class="get-started">Get started</h2>
-      <p class="call-to-action">The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961</p>
-      <form action="https://formspree.io/f/xknklbky" method="POST">
-        <label for="name">
-          <input type="text" id="name" name="name" placeholder="Your name" maxlength="30" required> <span>Your name</span>
-        </label><br>
-        <label for="email">
-          <input type="email" id="email" name="email" placeholder="Your email" required><span>Your email</span>
-        </label><br>
-        <label for="message">
-          <input class="textarea" id="message" name="message" placeholder="Please leave a message" maxlength="500" required><span>Leave a message</span>
-        </label><br>
-        <button class="btn start-collaboration" type="submit">
-          Start collaboration
-        </button>
-      </form>
+      <div class="call-to-action">        
+        <h2 class="get-started">Get started</h2>
+        <p class="call-to-action">The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961</p>
+        <form action="https://formspree.io/f/xknklbky" method="POST">
+          <label for="name">
+            <input type="text" id="name" name="name" placeholder="Your name" maxlength="30" required> <span>Your name</span>
+          </label><br>
+          <label for="email">
+            <input type="email" id="email" name="email" placeholder="Your email" required><span>Your email</span>
+          </label><br>
+          <label for="message">
+            <input class="textarea" id="message" name="message" placeholder="Please leave a message" maxlength="500" required><span>Leave a message</span>
+          </label><br>
+          <button class="btn start-collaboration" type="submit">
+            Start collaboration
+          </button>
+        </form>
+      </div>
     </div>
     <div class="socials">
       <h3 class="get-resume">Get my resume<a href="#"><img class="resume-image" src="assets/images/Union.svg" alt="resume-download"></a><span></span></h3>
@@ -212,6 +231,6 @@
       </ul>
     </div>
   </footer>
-  
+  <script src="./scripts/script.js"></script>  
 </body>
 </html>

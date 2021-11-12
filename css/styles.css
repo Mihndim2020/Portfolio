@@ -21,14 +21,20 @@ a {
 }
 
 header {
+  position: relative;
   max-width: 1440px;
   width: 100%;
   height: 74px;
   margin: auto;
-  padding: 16px;
   background: url("../assets/images/image_geometry_1.jpg");
   background-repeat: no-repeat;
   background-color: #fff;
+}
+
+.toggle-button {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 .headline-left .message {
@@ -52,6 +58,39 @@ nav .mobile-nav {
   justify-content: flex-end;
 }
 
+.menu-on {
+  display: none;
+}
+
+nav .mobile-container {
+  position: fixed;
+  background: url('../assets/images/image_geometry_menu_1.svg'), url('../assets/images/image_geometry_menu_2.svg');
+  background-position: left top, bottom;
+  background-repeat: no-repeat;
+  background-size: 95vw auto;
+  padding: 1rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 10;
+}
+
+.close_btn {
+  position: relative;
+  float: right;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.mobile-nav .mobile-nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+  font-size: 1.8rem;
+}
+
 nav .desktop-nav {
   position: fixed;
   display: none;
@@ -73,12 +112,12 @@ nav ul li {
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
-  height: 560px;
+  height: calc(40vw + 400px);
   padding: 16px;
   margin: auto;
   background: url("../assets/images/image_geometry_2.svg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: bottom;
   background-size: 100% auto;
   background-color: #fff;
 }
@@ -133,18 +172,6 @@ form .start-collaboration {
   margin-top: 10px;
   background: #1a2236;
 }
-
-/* *** This is an alternative to inserting a background *** */
-
-/* .headline .deco-image {
-  margin-top: 40px;
-  width: 100%;
-}
-
-.headline .deco {
-  width: 100%;
-  height: auto;
-} */
 
 .works {
   display: grid;
@@ -297,10 +324,15 @@ form .start-collaboration {
   height: 100%;
 }
 
-.desktop-works .second {
+.desktop-works .second,
+.desktop-works .third {
   display: flex;
   justify-content: space-between;
   height: 20rem;
+}
+
+.desktop-works .third {
+  height: 11.5rem;
 }
 
 .second .project-img1,
@@ -538,6 +570,10 @@ footer .social-links {
     background: #fff;
   }
 
+  .toggle-button {
+    display: none;
+  }
+
   nav .mobile-nav {
     display: none;
   }
@@ -578,6 +614,11 @@ footer .social-links {
     margin: 2rem 0;
   }
 
+  footer .start-collaboration {
+    width: 15rem;
+    margin: 0 auto;
+  }
+
   .headline-left .start-collaboration {
     width: 254px;
     font-size: 1rem;
@@ -598,7 +639,67 @@ footer .social-links {
     display: block;
   }
 
-  /* .desktop-works .second {
+  .about-myself {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .desktop-deco {
+    background: url("../assets/images/image_dots_with_teal.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .about-myself .desktop-deco,
+  .about-myself .skills {
+    margin-top: 0;
+  }
+
+  .right-side {
+    width: 50%;
+    padding: 0 4rem;
+  }
+
+  .right-side .about-text {
+    width: 30rem;
+  }
+
+  .right-side .get-my-cv {
+    width: 15rem;
+  }
+
+  .left-side {
     display: grid;
-  } */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 50%;
+    padding-right: 2rem;
+  }
+
+  footer .form-section {
+    background: url('../assets/images/image-geometry_6.png'), url('../assets/images/image-geometry_7-1.png');
+    background-color: #f9f9fa;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 12rem 12rem;
+    margin-top: 6rem;
+  }
+
+  footer .call-to-action {
+    width: 40vw;
+    margin: 0 auto;
+  }
+
+  footer .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.4rem 5rem;
+  }
+
+  footer .social-link {
+    margin-left: 2rem;
+  }
 }
