@@ -10,9 +10,18 @@
 </head>
 <body>
   <header>
+    <img class="toggle-button" id="toggle-button" src="assets/images/ic_menu.png" alt="hamburger button">
     <nav>
       <div class="mobile-nav">
-        <img src="assets/images/ic_menu.png" alt="hamburger button">
+        <div class="mobile-container" id="mobile-menu">
+          <img class="close_btn" id="close-button" src="assets/images/Union2.svg" alt="close button">
+          <ul class="mobile-nav-items">
+            <li><a href="#">Hello</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
       <ul class="desktop-nav">
         <li><a href="#">Hello</a></li>
@@ -37,11 +46,8 @@
     </div>
     <div class="headline-right">
     </div>
-    <!-- *** This is an alternative to inserting a background *** -->
-    <!-- <div class="deco-image">
-      <img class="deco" src="assets/images/image_geometry_2.svg" alt="Deco">
-        </div> -->
   </section>
+  
   <section class="works">
     <h2 class="projects-heading">Projects</h2>
     <div class="project">      
@@ -225,6 +231,6 @@
       </ul>
     </div>
   </footer>
-  
+  <script src="./scripts/script.js"></script>  
 </body>
 </html>
