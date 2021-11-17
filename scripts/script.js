@@ -1,6 +1,7 @@
 const TOGGLE_BUTTON = document.getElementById('toggle-button');
 const CLOSE_BUTTON = document.getElementById('close-button');
 const NAV_MENU = document.getElementById('mobile-menu');
+const MOBILE_NAV = document.querySelector('mobile-nav');
 const ITEMS = NAV_MENU.children[1].children;
 
 

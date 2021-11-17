@@ -20,6 +20,10 @@ a {
   color: #1a2236;
 }
 
+a:active {
+  border-bottom: 4px #1a2236 solid;
+}
+
 header {
   position: relative;
   max-width: 1440px;
@@ -58,21 +62,21 @@ nav .mobile-nav {
   justify-content: flex-end;
 }
 
-.menu-on {
-  display: none;
-}
-
 nav .mobile-container {
   position: fixed;
   background: url('../assets/images/image_geometry_menu_1.svg'), url('../assets/images/image_geometry_menu_2.svg');
   background-position: left top, bottom;
   background-repeat: no-repeat;
   background-size: 95vw auto;
-  padding: 1rem;
+  padding: 1.5rem;
   width: 100vw;
   height: 100vh;
   background-color: white;
   z-index: 10;
+}
+
+.menu-on {
+  display: none;
 }
 
 .close_btn {
@@ -89,10 +93,13 @@ nav .mobile-container {
   align-items: center;
   height: 85%;
   font-size: 1.8rem;
+  margin: 0 auto;
+  padding-right: 1rem;
 }
 
 nav .desktop-nav {
   position: fixed;
+  margin-top: 0;
   display: none;
   flex-direction: row;
   justify-content: center;
@@ -112,7 +119,7 @@ nav ul li {
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
-  height: calc(40vw + 400px);
+  height: calc(40vw + 350px);
   padding: 16px;
   margin: auto;
   background: url("../assets/images/image_geometry_2.svg");
