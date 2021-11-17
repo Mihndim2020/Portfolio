@@ -204,6 +204,33 @@ form .start-collaboration {
 .desktop-works .project {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.works .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.works .see-projects {
+  display: flex;
+  flex-direction: row;
+}
+
+.see-projects .see-project {
+  margin: auto 0.5rem;
+  white-space: nowrap;
+}
+
+.see-projects .see-project a {
+  color: white;
+}
+
+.project-info .project-description {
+  font-size: 1rem;
+  margin-bottom: 0rem;
 }
 
 .works .project-img,
