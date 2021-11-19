@@ -33,6 +33,7 @@ header {
   background: url("../assets/images/image_geometry_1.jpg");
   background-repeat: no-repeat;
   background-color: #fff;
+  z-index: 10;
 }
 
 .toggle-button {
@@ -189,6 +190,10 @@ form .start-collaboration {
 
 /* **** This is the works section **** */
 
+.desktop-works {
+  padding-top: 5rem;
+}
+
 .works h2,
 .desktop-works h2 {
   font-family: 'Playfair Display', serif;
@@ -207,14 +212,8 @@ form .start-collaboration {
   margin-bottom: 1rem;
 }
 
-.works .project-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.works .see-projects {
+.works .see-projects,
+.desktop-works .see-projects {
   display: flex;
   flex-direction: row;
 }
@@ -240,9 +239,12 @@ form .start-collaboration {
 }
 
 .works .project-info,
-.desktop-works .project-info {
+.desktop-works .project-info,
+.desktop-works .project-info1 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 16px;
   margin: -1.8px 0;
   background: #1a2236;
@@ -317,8 +319,6 @@ form .start-collaboration {
 
 .desktop-works {
   display: none;
-
-  /* display: grid; */
   max-width: 1440px;
   width: 100%;
   margin: 4rem auto;
@@ -327,14 +327,14 @@ form .start-collaboration {
 .desktop-works .first {
   display: flex;
   justify-content: space-between;
-  height: 40rem;
+  height: 32rem;
 }
 
 .desktop-works h2 {
   transform: rotate(-90deg);
   font-style: normal;
   font-weight: normal;
-  font-size: 7rem;
+  font-size: 4rem;
   margin: 20px 0;
   line-height: 100%;
   color: #1a2236;
@@ -353,9 +353,83 @@ form .start-collaboration {
 }
 
 .first-right {
+  position: relative;
   max-width: 800px;
   width: 67%;
-  height: 100%;
+  height: 73%;
+}
+
+.second-first,
+.second-third {
+  position: relative;
+  max-width: 480px;
+  width: 34%;
+  height: 73%;
+}
+
+.third-first,
+.third-second,
+.third-last {
+  position: relative;
+  max-width: 320px;
+  width: 22%;
+  height: auto;
+}
+
+.first-right .project-info1,
+.second-first .project-info1,
+.second-third .project-info1,
+.third-first .project-info1,
+.third-second .project-info1,
+.third-last .project-info1 {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin: -1.8px 0;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.first-right:hover .project-info1 {
+  visibility: visible;
+  opacity: 0.9;
+  min-width: 31rem;
+  min-height: 29.5rem;
+}
+
+.second-first:hover .project-info1,
+.second-third:hover .project-info1 {
+  visibility: visible;
+  opacity: 0.9;
+  min-width: 31rem;
+  min-height: 18rem;
+}
+
+.third-first:hover .project-info1,
+.third-second:hover .project-info1,
+.third-last:hover .project-info1 {
+  visibility: visible;
+  opacity: 0.9;
+  min-width: 20rem;
+  min-height: 12rem; 
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 1rem;
 }
 
 .desktop-works .second,
@@ -371,8 +445,14 @@ form .start-collaboration {
 
 .second .project-img1,
 .second .project-img2 {
-  width: 30rem;
+  width: 31rem;
   height: auto;
+}
+
+.third .project-img3,
+.third .project-img4 {
+  width: 20rem;
+  height: 11.9rem;
 }
 
 .second .second-middle {
@@ -398,7 +478,7 @@ form .start-collaboration {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 5rem;
   line-height: 100%;
   color: #1a2236;
   margin-bottom: 0;
