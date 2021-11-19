@@ -4,7 +4,6 @@ const NAV_MENU = document.getElementById('mobile-menu');
 const MOBILE_NAV = document.querySelector('mobile-nav');
 const ITEMS = NAV_MENU.children[1].children;
 
-
 const mobileMenuHandler = () => {
   NAV_MENU.classList.toggle('menu-on');
 };
