@@ -42,21 +42,6 @@ header {
   right: 1.5rem;
 }
 
-.headline-left .message {
-  position: fixed;
-  margin-top: -40rem;
-  font-size: 4rem;
-  color: yellow;
-  background: darkblue;
-  animation: blinker 2s linear infinite;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-
 nav .mobile-nav {
   display: flex;
   flex-direction: row;
@@ -190,9 +175,9 @@ form .start-collaboration {
 
 /* **** This is the works section **** */
 
-.desktop-works {
+/* .desktop-works {
   padding-top: 5rem;
-}
+} */
 
 .works h2,
 .desktop-works h2 {
@@ -229,7 +214,8 @@ form .start-collaboration {
 
 .project-info .project-description {
   font-size: 1rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .works .project-img,
@@ -263,7 +249,8 @@ form .start-collaboration {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 40px;
+  text-align: center;
   line-height: 80%;
   color: #fff;
   margin: 0;
@@ -320,6 +307,7 @@ form .start-collaboration {
 .desktop-works {
   display: none;
   max-width: 1440px;
+  padding-top: 5rem;
   width: 100%;
   margin: 4rem auto;
 }
@@ -398,11 +386,12 @@ form .start-collaboration {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
+  text-align: center;
   line-height: 80%;
   color: #fff;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .2s, visibility .2s;
+  transition: opacity 0.2s, visibility 0.2s;
 }
 
 .first-right:hover .project-info1 {
@@ -426,9 +415,11 @@ form .start-collaboration {
   visibility: visible;
   opacity: 0.9;
   min-width: 20rem;
-  min-height: 12rem; 
+  min-height: 12rem;
   text-align: center;
   font-size: 0.7rem;
+  line-height: 1.2;
+  margin: 0;
   padding: 1rem;
 }
 
@@ -510,6 +501,10 @@ form .start-collaboration {
   background: #1a2236;
 }
 
+.about-myself .get-my-cv a {
+  color: white;
+}
+
 .about-myself .cv-image {
   height: 16px;
   padding-left: 10px;
@@ -575,7 +570,7 @@ footer .get-started {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 5rem;
   line-height: 100%;
   color: #1a2236;
   margin-top: 70px;
@@ -589,6 +584,7 @@ footer .call-to-action {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
+  margin: 2rem auto;
 }
 
 footer form {
@@ -652,7 +648,7 @@ footer .socials {
   padding: 16px;
 }
 
-footer .get-resume {
+footer .get-resume a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -661,7 +657,7 @@ footer .get-resume {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.3rem;
   line-height: 24px;
 }
 
