@@ -407,6 +407,7 @@ form .start-collaboration {
   opacity: 0.9;
   min-width: 31rem;
   min-height: 18rem;
+  line-height: 1.2;
 }
 
 .third-first:hover .project-info1,
