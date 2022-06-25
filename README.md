@@ -55,6 +55,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse community
+- W3Schools
 
 
 ## 📝 License
